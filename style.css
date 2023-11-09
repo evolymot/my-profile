@@ -1,0 +1,133 @@
+body {
+    background-color: #0a0a0a; /* Dark background */
+}
+
+h1, h2, p {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+h1 {
+    color: #ff0097; /* Neon pink */
+    font-size: 36px;
+    text-shadow: 0 0 5px #ff0097; /* Glowing effect */
+}
+
+h2 {
+    color: #00ffea; /* Neon cyan */
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px #00ffea; /* Glowing effect */
+}
+
+p {
+    font-size: 16px;
+    color: #f8f8f2; /* Off-white text for better readability */
+    line-height: 1.5; /* Improve readability */
+}
+
+a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #ff65a3; /* Soft neon pink */
+}
+
+a:hover {
+    color: #ffffff; /* Bright white on hover for contrast */
+    text-shadow: 0 0 10px #ff65a3; /* Stronger glowing effect on hover */
+}
+
+/* Custom design with class */
+
+.container {
+    max-width: 90%; /* Make it more responsive */
+    margin: 40px auto;
+    background-color: #121212; /* Dark container background */
+    padding: 20px;
+    border: 1px solid #ff0097; /* Neon border */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+}
+
+.card-white {
+    background-color: #222; /* Darker shade for card background */
+    padding: 20px;
+    box-shadow: 0 0 20px #ff0097; /* Neon glow effect */
+    border-radius: 6px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 20%;
+    border: 2px solid #ff0097; /* Neon border for images */
+}
+
+.btn-blue {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0bceaf; /* Cyberpunk neon teal */
+    padding: 10px 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #0bceaf; /* Glowing effect */
+}
+
+.btn-blue:hover {
+    background-color: #08a08a; /* Darker shade on hover */
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-inline li {
+    display: inline;
+    padding: 10px;
+}
+
+.list-inline i {
+    font-size: 40px;
+    color: #ff0097; /* Neon pink for icons */
+}
+
+.list-inline i:hover {
+    color: #00ffea; /* Neon cyan on hover */
+}
+
+#introduction p {
+    margin-bottom: 40px;
+}
+
+.insta i:hover {
+    color: #e4007c; /* Neon magenta for Instagram hover */
+}
+
+/* Additional styles for cyberpunk flavor */
+body, .container, .card-white {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for interactive elements */
+}
+
+/* Include some hover animations for buttons and links */
+.btn-blue, a, .list-inline i {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-blue:hover, a:hover, .list-inline i:hover {
+    transform: scale(1.05); /* Slightly increase size on hover for interactive feedback */
+}
+
+/* Ensure the glowing effect is not too intense during the day and becomes prominent in dark environments */
+@media (prefers-color-scheme: dark) {
+    h1, h2 {
+        text-shadow: 0 0 8px currentColor;
+    }
+    
+    a:hover, .btn-blue:hover, .list-inline i:hover {
+        box-shadow: 0 0 15px currentColor;
+    }
+}
